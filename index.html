@@ -27,6 +27,7 @@
     <script src="https://embed.typeform.com/next/embed.js"></script>
     <script>
       function onTypeformSubmit(data) {
+        console.log(data)
         let redirectTarget = "https://screener.myfriendben.org/?referrer=bia&externalid="+data.responseId
         window.location.href = redirectTarget
       }
